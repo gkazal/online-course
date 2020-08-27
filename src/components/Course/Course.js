@@ -9,6 +9,7 @@ import { CardDeck, Card, Button } from 'react-bootstrap';
 const Course = (props) => {
     const { courseTitle, price, image } = props.course
     const handleAddCourse = props.handleAddCourse
+
     return (
         
         // <div className="courseInfo-container ">
@@ -21,8 +22,13 @@ const Course = (props) => {
         //     </button>
         // </div>
 
-        <div className="courseInfo-container">
-            <CardDeck>
+        <div className="courseInfo-container box grid">
+
+
+           
+
+
+             <CardDeck>
             <Card className="image">
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
@@ -36,7 +42,7 @@ const Course = (props) => {
                     </Button>
                 </Card.Body>
             </Card>
-            </CardDeck>
+            </CardDeck> 
 
         </div>
         
